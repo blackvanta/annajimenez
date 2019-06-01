@@ -1,0 +1,225 @@
+﻿@font-face {
+    font-family: 'itc-caslon-224-std-medium';
+    src: url('../fonts/itc-caslon-224-std-medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'gza';
+    src: url('../fonts/Gza.otf') format('opentype');
+}
+
+/*body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}*/
+
+.mainLogo {
+    width: 118px;
+    cursor: pointer;
+    z-index: 11111111;
+}
+
+.mainLogo_Wrapper {
+    position: fixed;
+    z-index: 99999999999;
+}
+
+.imagewrapper {
+    /*background-image: url(../photos/Arch/cubes.jpg);
+            background-size: cover;*/
+}
+
+.main_image {
+    height: auto;
+    width: 100%;
+}
+
+.row.seeMore {
+    margin-top: 21px;
+    margin-left: -3px;
+}
+
+.title._second {
+    float: right;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+    .text.link {
+        font-size: 13px;
+    }
+
+.logo_page {
+    width: 10vw;
+}
+
+.row {
+    font-family: helvetica;
+}
+/*VERTICAL MENU*/
+
+.vertical-menu {
+    width: 140px;
+    float: right;
+    text-align: right;
+    font-family: itc-caslon-224-std-medium;
+}
+
+    .vertical-menu a {
+        background-color: transparent;
+        color: black;
+        display: block;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+        .vertical-menu a:hover {
+            background-color: transparent;
+        }
+
+        .vertical-menu a.active {
+            background-color: transparent;
+            color: black;
+        }
+
+.ist_svg {
+    display: none;
+}
+
+.active + .ist_svg {
+    display: block;
+}
+
+.link {
+    color: #58595b;
+    text-decoration: overline;
+}
+
+.images {
+    width: 30vw;
+}
+
+.main-title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* left: 25.5%; */
+    z-index: 111;
+}
+
+    .main-title .rectangle {
+        font-size: 9vw;
+        text-align: center;
+        color: #EE364F;
+        font-family: gza;
+        z-index: 1;
+        align-items: center;
+    }
+
+.sub-title {
+    position: fixed;
+    bottom: 3px;
+}
+
+    .sub-title .rectangle {
+        color: rgba(255, 0, 0, 0.50);
+        font-size: 10px;
+        margin-left: 21px;
+        font-weight: bold;
+    }
+
+.ratio-container {
+    position: relative;
+    background: transparent !important;
+}
+
+    .ratio-container.transparent {
+        background-color: transparent !important;
+    }
+
+.container {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.container--full_view {
+    height: 100vh;
+    width: 100vw;
+}
+
+.no-show {
+    display: none;
+}
+
+#1photo .image--full_view {
+    transform: rotate(90deg);
+    width: 60vw;
+}
+
+.row.center {
+    height: 100vh;
+}
+
+.space-1.center {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.image--full_view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.sectionTitle.active {
+    bottom: 50%;
+    right: 0%;
+    position: fixed;
+    width: 100%;
+}
+
+    .sectionTitle.active > a.titles {
+        text-align: center;
+        font-size: 9vw;
+        text-align: center;
+        color: #EE364F !important;
+        font-family: gza;
+        align-items: center;
+        background-color: transparent !important;
+        cursor: default;
+    }
+
+/*.sectionTitle.active > a.titles:hover {
+            text-decoration: line-through;
+        }*/
+
+/*.sectionTitle.active > a.titles:hover {
+            text-decoration: line-through;
+            text-decoration-style: wavy;
+            text-decoration-color: rgba(238, 54, 79, 0.18);
+        }*/
+
+.sectionTitle:not(.active) {
+    display: none;
+}
+
+#myScrollspy {
+    position: fixed;
+    z-index: 555555;
+}
